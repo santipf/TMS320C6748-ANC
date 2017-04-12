@@ -24,6 +24,8 @@
 								<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=C6748.cmd"/>
 								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
 								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+								<listOptionValue builtIn="false" value="PRODUCTS=com.ti.rtsc.DSPBIOS:5.42.2.10;com.ti.rtsc.XDCtools:3.50.1.12_core;"/>
+								<listOptionValue builtIn="false" value="PRODUCT_MACRO_IMPORTS={&quot;com.ti.rtsc.XDCtools&quot;:[&quot;${XDC_INCLUDE_PATH}&quot;,&quot;${XDC_LIBRARY_PATH}&quot;,&quot;${XDC_LIBRARIES}&quot;,&quot;${XDC_SYMBOLS}&quot;],&quot;com.ti.rtsc.DSPBIOS&quot;:[&quot;${BIOS_INCLUDE_PATH}&quot;,&quot;${BIOS_LIBRARY_PATH}&quot;,&quot;${BIOS_LIBRARIES}&quot;,&quot;${BIOS_SYMBOLS}&quot;]}"/>
 							</option>
 							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1493709544" name="Compiler version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="8.1.3" valueType="string"/>
 							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C6000_8.1.exe.targetPlatformDebug.177645790" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.exe.targetPlatformDebug"/>
@@ -31,6 +33,8 @@
 							<tool id="com.ti.ccstudio.buildDefinitions.C6000_8.1.exe.compilerDebug.1776088913" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.exe.compilerDebug">
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.SILICON_VERSION.1536312182" name="Target processor version (--silicon_version, -mv)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.SILICON_VERSION" useByScannerDiscovery="false" value="6740" valueType="string"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DEFINE.1881859936" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DEFINE" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="${XDC_SYMBOLS}"/>
+									<listOptionValue builtIn="false" value="${BIOS_SYMBOLS}"/>
 									<listOptionValue builtIn="false" value="c6748"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DEBUGGING_MODEL.849592599" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DEBUGGING_MODEL" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
@@ -40,6 +44,8 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DISPLAY_ERROR_NUMBER.368722479" name="Emit diagnostic identifier numbers (--display_error_number, -pden)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DIAG_WRAP.1426022921" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.INCLUDE_PATH.1756130522" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${XDC_INCLUDE_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BIOS_INCLUDE_PATH}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${STARTERWARE_ROOT}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${STARTERWARE_ROOT}/include/hw&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}&quot;"/>
@@ -59,13 +65,17 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.DISPLAY_ERROR_NUMBER.258099596" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.DIAG_WRAP.1695174462" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.SEARCH_PATH.1800452060" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.SEARCH_PATH" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${XDC_LIBRARY_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BIOS_LIBRARY_PATH}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/drivers_c674x_c6748/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/platform_c674x_c6748_lcdkC6748/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.LIBRARY.1224800175" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C6000_8.1.linkerID.LIBRARY" useByScannerDiscovery="false" valueType="libs">
-									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+									<listOptionValue builtIn="false" value="${XDC_LIBRARIES}"/>
+									<listOptionValue builtIn="false" value="${BIOS_LIBRARIES}"/>
+									<listOptionValue builtIn="false" value="libc.a"/>
 									<listOptionValue builtIn="false" value="drivers.lib"/>
 									<listOptionValue builtIn="false" value="platform.lib"/>
 								</option>
